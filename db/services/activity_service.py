@@ -10,11 +10,13 @@ def add_activity(description):
     session.commit()
     session.close()
 
+    return get_id(description)
+
+def get_id(description):
     with engine.connect() as con:
         rows = con.execute(f'''
             SELECT id FROM activities
             WHERE description='{description}'
         ''')
-
         for row in rows:
-            return row
+            return row[0]

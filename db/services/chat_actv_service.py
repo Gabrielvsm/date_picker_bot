@@ -36,3 +36,10 @@ def listing(chat_id):
             result.append(row[0])
 
     return result
+
+def remove(actv_id):
+    with engine.connect() as con:
+        con.execute(f'''
+            DELETE FROM chat_activity
+            WHERE actv_id={actv_id}
+        ''')
