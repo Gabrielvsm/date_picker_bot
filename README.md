@@ -7,4 +7,7 @@ The final goal is for the bot to allow you to do the following things:
 - List the activities and subactivities registered for an particular chat (private or group)
 - Choose what to do in a gamefied and random way
 ## Progress
-As of now the functional parts are the registering of activities and listing them
+The functional parts available are:
+- Adding new activities
+- Listing the activities
+- Removing activities
