@@ -1,1 +1,6 @@
 .env
+db/data
+db/alembic
+db/alembic.ini
+
+__pycache__
