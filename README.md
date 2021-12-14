@@ -1,5 +1,5 @@
 # Date Picker Bot 🌹
-A telegram bot to help the indecisives decide what to do on a date night or even how to enjoy a friendly evening.
+A telegram bot to help the indecisives decide what to do on a date night or even how to enjoy a friendly evening. It was made with the intention of helping the decision of deciding on a date and also studying and practicing Ruby and SQL.
 ## How it works 💻
 The final goal is for the bot to allow you to do the following things:
 - Add activities and subactivities (subcategories)

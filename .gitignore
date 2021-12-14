@@ -1,6 +1,3 @@
-.env
-db/data
-db/alembic
-db/alembic.ini
-
-__pycache__
+env.rb
+db/data.db
+/imgs
