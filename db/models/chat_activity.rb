@@ -37,4 +37,11 @@ class ChatActivity
         end
         return true
     end
+
+    def self.exists?(actv_id, chat_id)
+        id = db.execute "SELECT actv_id FROM chat_activity WHERE actv_id=#{actv_id} AND chat_id=#{chat_id};"
+        db.close
+
+        not id.empty? and id[0]['actv_id'] == actv_id
+    end
 end

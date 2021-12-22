@@ -16,7 +16,8 @@ class Chat
     end
 
     def self.exists?(chat_id)
-        id = db.execute "SELECT chat_id FROM chat WHERE chat_id=#{chat_id}"
+        id = db.execute "SELECT chat_id FROM chat WHERE chat_id=#{chat_id};"
+        db.close
 
         not id.empty? and id[0]['chat_id'] == chat_id
     end

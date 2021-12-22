@@ -27,8 +27,7 @@ class Activity
     def self.find_by_description(description)
         row_id = db.execute "SELECT rowid FROM activity WHERE description='#{description}'"
         db.close
-        
-        row_id.empty? ? false : row_id
+        row_id.empty? ? false : row_id[0]['rowid']
     end
 
     def self.list_from_chatid(chat_id)
@@ -39,5 +38,12 @@ class Activity
             ON chat_activity.actv_id=activity.rowid
             WHERE chat_activity.chat_id=#{chat_id};
         LIST_FCI
+    end
+
+    def self.exists?(description)
+        id = db.execute "SELECT rowid, description FROM activity WHERE description='#{description}';"
+        db.close
+        
+        not id.empty? and id[0]['description'] == description
     end
 end
