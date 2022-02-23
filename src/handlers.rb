@@ -1,4 +1,4 @@
-require '../db/models/index'
+require_relative '../db/models/index'
 
 def get_options(message)
     actv_list = Activity.list_from_chatid(message.chat.id)
@@ -47,3 +47,4 @@ def list(message)
 
     resp_string
 end
+
