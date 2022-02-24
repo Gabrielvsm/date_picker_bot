@@ -6,8 +6,9 @@ The final goal is for the bot to allow you to do the following things:
   - Watch a movie (activity) -> What genre of movies (subactivity)
 - List the activities and subactivities registered for an particular chat (private or group)
 - Choose what to do in a gamefied and random way
-## Progress
+## Progress 📃
 The functional parts available are:
 - Adding new activities
 - Listing the activities
 - Removing activities
+- Letting the bot pick a random activity
